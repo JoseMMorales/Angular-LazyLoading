@@ -8,6 +8,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * `ng g c auth/pages/login`
 * `ng g c auth/pages/password`
 * `ng g m auth/authRouting --flat`
+* `ng g m products --routing`
+* `ng g c products/pages/list`
+* `ng g c products/pages/add`
+* `ng g c products/pages/edit`
+* `ng g c products/pages/product`
 
 ## Development server
 
