@@ -14,6 +14,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * `ng g c products/pages/edit`
 * `ng g c products/pages/product`
 * `ng g m users --routing`
+* `ng g c users/pages/edit`
+* `ng g c users/pages/list`
+* `ng g c users/pages/new`
+* `ng g c users/pages/user`
 
 ## Development server
 
