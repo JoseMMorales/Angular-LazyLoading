@@ -3,7 +3,11 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.
 
 ## Commands used 
-* `ng g m auth`
+* `ng g m auth` 
+* `ng g c auth/pages/register`
+* `ng g c auth/pages/login`
+* `ng g c auth/pages/password`
+* `ng g m auth/authRouting --flat`
 
 ## Development server
 
