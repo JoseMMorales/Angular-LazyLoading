@@ -13,6 +13,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * `ng g c products/pages/add`
 * `ng g c products/pages/edit`
 * `ng g c products/pages/product`
+* `ng g m users --routing`
 
 ## Development server
 
