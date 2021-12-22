@@ -1,44 +1,30 @@
 # LazyLoading
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.
+[Lazy loading](https://angular.io/guide/lazy-loading-ngmodules) is a technique in Angular that allows you to load JavaScript components asynchronously when a specific route is activated. It improves the speed of the application load time by splitting the application into several bundles using loadChildren (instead of component).
 
-## Commands used 
-* `ng g m auth` 
-* `ng g c auth/pages/register`
-* `ng g c auth/pages/login`
-* `ng g c auth/pages/password`
-* `ng g m auth/authRouting --flat`
-* `ng g m products --routing`
-* `ng g c products/pages/list`
-* `ng g c products/pages/add`
-* `ng g c products/pages/edit`
-* `ng g c products/pages/product`
-* `ng g m users --routing`
-* `ng g c users/pages/edit`
-* `ng g c users/pages/list`
-* `ng g c users/pages/new`
-* `ng g c users/pages/user`
+## How Lazy Loading works?
+The application is split into multiple modules. Top level in the tree is the App itself where handle a main module which will hold the root components (usually called app-routing.module.ts located in the app folder), and underneath will be seat the featured modules which will be loaded "on demand" after user interaction. 
 
-## Development server
+Each module can define multiple components, services, pages, models and routes if the project requires.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<div align="center">
 
-## Code scaffolding
+![Screenshot 2021-12-22 at 17 11 25](https://user-images.githubusercontent.com/43299285/147122174-a706d0e2-c45c-47ea-92d1-70507c3366a5.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+</div>
 
-## Build
+## Building pages in module with ng...
+#### Products Module
+* `ng g m module --routing`
+* `ng g c module/pages/feature`
+* `ng g c module/pages/feature`
+* ...
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installing this repo
+* `git clone https://github.com/JoseMMorales/Angular-LazyLoading.git`
+* `cd Angular-LazyLoading`
+* `npm start`
+* `ng serve`
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Author
+JoseMMorales
