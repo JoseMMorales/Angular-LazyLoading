@@ -1,60 +1,83 @@
-<h1>Lazy Loading App</h1>
-
 <mat-toolbar color="primary">
-
-  <div class="toolbar-tools">
-
+  <span>
     <button mat-icon-button>
       <mat-icon>menu</mat-icon>
     </button>
+    <span>Lazzy Loading</span>  
+  </span>
+  
+  <span class="main-span">
 
-    <div class="filler"></div>
+    <span class="span-menu">
+      <button class="main-button" mat-icon-button [matMenuTriggerFor]="menuAuth">
+        <span>Auth</span>
+      </button>
+      <mat-menu #menuAuth="matMenu" [overlapTrigger]="false">
+        <button mat-menu-item routerLink="/auth/login">
+          <mat-icon>account_circle</mat-icon>
+          <span>Login</span>
+        </button>
+        <button mat-menu-item routerLink="/auth/password">
+          <mat-icon> vpn_key</mat-icon>
+          <span>Password</span>
+        </button>
+        <button mat-menu-item routerLink="/auth/register">
+          <mat-icon>person_add</mat-icon>
+          <span>Register</span>
+        </button>
+      </mat-menu>  
+    </span>
 
-  </div>
+    <span class="span-menu">
+      <button class="main-button" mat-icon-button [matMenuTriggerFor]="menuProduct">
+        <span>Products</span>
+      </button>
+      <mat-menu #menuProduct="matMenu" [overlapTrigger]="false">
+        <button mat-menu-item routerLink="/products/add">
+          <mat-icon>account_circle</mat-icon>
+          <span>Add</span>
+        </button>
+        <button mat-menu-item routerLink="/products/edit">
+          <mat-icon> vpn_key</mat-icon>
+          <span>Edit</span>
+        </button>
+        <button mat-menu-item routerLink="/products/list">
+          <mat-icon>person_add</mat-icon>
+          <span>List</span>
+        </button>
+        <button mat-menu-item routerLink="/products/product">
+          <mat-icon>person_add</mat-icon>
+          <span>Product</span>
+        </button>
+      </mat-menu>  
+    </span>
 
-
+    <span class="span-menu">
+      <button class="main-button" mat-icon-button [matMenuTriggerFor]="menuUser">
+        <span>Users</span>
+      </button>
+      <mat-menu #menuUser="matMenu" [overlapTrigger]="false">
+        <button mat-menu-item routerLink="/users/new">
+          <mat-icon>account_circle</mat-icon>
+          <span>New</span>
+        </button>
+        <button mat-menu-item routerLink="/users/edit">
+          <mat-icon> vpn_key</mat-icon>
+          <span>Edit</span>
+        </button>
+        <button mat-menu-item routerLink="/users/list">
+          <mat-icon>person_add</mat-icon>
+          <span>List</span>
+        </button>
+        <button mat-menu-item routerLink="/users/user">
+          <mat-icon>person_add</mat-icon>
+          <span>User</span>
+        </button>
+      </mat-menu>  
+    </span>
+    
+  </span>
+  
 </mat-toolbar>
 
-<ul>
-  <li>
-    <a routerLink="/auth/login">Login</a>
-  </li>
-  <li>
-    <a routerLink="/auth/password">Password</a>
-  </li>
-  <li>
-    <a routerLink="/auth/register">Register</a>
-  </li>
-</ul>
-
-<ul>
-  <li>
-    <a routerLink="/products/add">Add</a>
-  </li>
-  <li>
-    <a routerLink="/products/edit">Edit</a>
-  </li>
-  <li>
-    <a routerLink="/products/list">List</a>
-  </li>
-  <li>
-    <a routerLink="/products/product">Product</a>
-  </li>
-</ul>
-
-<ul>
-  <li>
-    <a routerLink="/users/edit">Edit</a>
-  </li>
-  <li>
-    <a routerLink="/users/list">List</a>
-  </li>
-  <li>
-    <a routerLink="/users/new">New</a>
-  </li>
-  <li>
-    <a routerLink="/users/user">User</a>
-  </li>
-</ul>
-
-<router-outlet></router-outlet>
+<router-outlet></router-outlet> 

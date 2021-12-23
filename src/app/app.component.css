@@ -1,0 +1,24 @@
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+mat-toolbar > span:nth-child(2) {
+  flex: 1 1 auto;
+  justify-content: flex-end;
+}
+
+.main-span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.span-menu {
+  padding: 0 .5em;
+  width: fit-content;
+}
+
+.main-button {
+  width: fit-content;
+}
