@@ -28,11 +28,10 @@ The way that lazy load in Angular modules is declared via route declarations. We
 
 </div>
 
-## Building pages in modules with ng ...
+## ng commands for pages in auth modules...
 * `ng g m module --routing`
-* `ng g c module/pages/feature`
-* `ng g c module/pages/feature`
-* ...
+* `ng g m auth/authRouting --flat`
+* `ng g c auth/pages/feature`
 
 ## Installing this repo
 * `git clone https://github.com/JoseMMorales/Angular-LazyLoading.git`
